@@ -1,0 +1,54 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+ .body{
+    background:#1640D6;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #board{
+    height: 90vmin;
+    width: 90vmin;
+    background-color:black;
+    border-radius: 20px;
+    box-shadow: 20px 20px 15px navy;
+    display:grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+ }
+
+ #scoreBox{
+    position:absolute;
+    top:10px;
+    left:200px;
+    font-size: 40px;
+    font-weight: bold;
+ }
+  #hiScore{
+   position:absolute;
+   top:80px;
+   left:200px;
+   font-size:40px;
+   font-weight: bolder;
+  }
+
+ .head{
+    background:linear-gradient(white,grey);
+    border-radius: 12px;
+    border:2px solid yellow
+ }
+  .snake{
+   background-color:yellow;
+   border-radius: 8px;
+  }
+ .food{
+   background:linear-gradient(red,orange);
+   border:1px solid red;
+   border-radius: 16px;
+   box-shadow:1px 1px 5px red ;
+ }
